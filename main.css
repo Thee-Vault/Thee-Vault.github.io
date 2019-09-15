@@ -1,0 +1,87 @@
+body {
+	background-color: black;
+}
+
+h1 {
+	text-align: center;
+	font-family: Impact;
+	font-size: 48;
+	color: rgb(0, 160, 3);
+}
+
+.littlebox {
+	padding: 5px;
+	border: 1px solid grey;
+	margin-right: 1160px;
+	margin-top: 50px;
+	font-size: 24;
+}
+
+.littlebox a {
+	color: grey;
+	text-decoration: none;
+}
+
+.open {
+	color: white !important;
+}
+
+.bigbox {
+	padding: 10px;
+	border: 1px solid grey;
+	margin: 200px;
+	margin-top: 50px;
+	font-size: 24;
+	color: grey;
+}
+
+.bigbox p {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.ccb {
+	border: 1px solid grey;
+	position: absolute;
+	left: 375;
+	top: 93;
+	font-size: 24;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+.red {
+	color: red;
+	margin: 0px;
+	text-decoration: none;
+}
+
+.grey {
+	color: grey;
+	margin: 0px;
+	text-decoration: none;
+}
+
+.orange {
+	color: orange;
+	margin: 0px;
+	text-decoration: none;
+}
+
+.green {
+	color: green;
+	margin: 0px;
+	text-decoration: none;
+
+}
+
+
+
+
+
