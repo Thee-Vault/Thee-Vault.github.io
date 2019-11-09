@@ -46,7 +46,7 @@ h1 {
 
 .ccb {
 	border: 1px solid grey;
-	position: justify;
+	position: absolute;
 	left: 375;
 	top: 93;
 	font-size: 24;
