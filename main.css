@@ -12,7 +12,8 @@ h1 {
 .littlebox {
 	padding: 5px;
 	border: 1px solid grey;
-	margin-right: 1160px;
+	height: 120;
+	width: 173;
 	margin-top: 50px;
 	font-size: 24;
 }
@@ -45,7 +46,7 @@ h1 {
 
 .ccb {
 	border: 1px solid grey;
-	position: absolute;
+	position: justify;
 	left: 375;
 	top: 93;
 	font-size: 24;
@@ -84,7 +85,7 @@ h1 {
 .ccb2 {
 	width: 171px;
 	border: 1px solid grey;
-	position: absolute;
+	position: justify;
 	top: 288;
 	font-size: 24;
 }
