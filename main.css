@@ -90,6 +90,53 @@ h1 {
 	font-size: 24;
 }
 
+.progress {
+	width: 100%;
+	background-color: grey;
+}
+
+.nes {
+	width: 15%;
+	height: 30%;
+	background-color: rgb(0, 160, 3);
+	color: white;
+}
+
+.snes {
+	width: 2%;
+	height: 30%;
+	background-color: rgb(0, 160, 3);
+	color: white;
+}
+
+.n64 {
+	width: 0%;
+	height: 30%;
+	background-color: rgb(0, 160, 3);
+	color: white;
+}
+
+.gba {
+	width: 0%;
+	height: 30%;
+	background-color: rgb(0, 160, 3);
+	color: white;
+}
+
+.gbc {
+	width: 0%;
+	height: 30%;
+	background-color: rgb(0, 160, 3);
+	color: white;
+}
+
+.fds {
+	width: 0%;
+	height: 30%;
+	background-color: rgb(0, 160, 3);
+	color: white;
+}
+
 
 
 
