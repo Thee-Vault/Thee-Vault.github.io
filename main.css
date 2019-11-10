@@ -156,4 +156,14 @@ h1 {
     margin: 0 auto;
 }
 
+.description {
+	top: 400;
+	left: 900;
+	position: absolute;
+	border: 1px solid grey;
+	padding: 5px;
+	padding-bottom: 5px;
+	padding-top: 0px;
+}
+
 
