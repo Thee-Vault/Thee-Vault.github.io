@@ -144,6 +144,13 @@ h1 {
 	color: white;
 }
 
+.border {
+	border: 1px solid grey;
+}
 
+.center {
+    display: block;
+    margin: 0 auto;
+}
 
 
