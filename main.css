@@ -151,6 +151,8 @@ h1 {
 .center {
     display: block;
     margin: 0 auto;
+	width: 293;
+	height: 401;
 }
 
 
