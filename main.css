@@ -146,13 +146,13 @@ h1 {
 
 .border {
 	border: 1px solid grey;
+	width: 293;
+	height: 401;
 }
 
 .center {
     display: block;
     margin: 0 auto;
-	width: 293;
-	height: 401;
 }
 
 
