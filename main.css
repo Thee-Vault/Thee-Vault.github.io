@@ -157,8 +157,8 @@ h1 {
 }
 
 .description {
-	top: 400;
-	left: 900;
+	top: 75;
+	left: 600;
 	position: absolute;
 	border: 1px solid grey;
 	padding: 5px;
