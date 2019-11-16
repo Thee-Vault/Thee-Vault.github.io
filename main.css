@@ -55,6 +55,8 @@ h1 {
 	left: 375;
 	top: 93;
 	font-size: 24;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
 }
 
 .center {
@@ -93,6 +95,8 @@ h1 {
 	position: justify;
 	top: 288;
 	font-size: 24;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
 }
 
 .progress {
@@ -188,6 +192,8 @@ h1 {
 	width: 933;
 	font-size: 24;
 	color: grey;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
 }
 	
 
