@@ -7,6 +7,7 @@ h1 {
 	font-family: Impact;
 	font-size: 48;
 	color: rgb(0, 160, 3);
+	text-shadow: rgb(185, 8, 243) -1px -2px 0.5em;
 }
 
 .littlebox {
@@ -16,6 +17,8 @@ h1 {
 	width: 173;
 	margin-top: 50px;
 	font-size: 24;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
 }
 
 .littlebox a {
@@ -34,6 +37,8 @@ h1 {
 	margin-top: 50px;
 	font-size: 24;
 	color: grey;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
 }
 
 .bigbox p {
