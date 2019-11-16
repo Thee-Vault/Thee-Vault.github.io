@@ -167,13 +167,16 @@ h1 {
 
 .description {
 	top: 75;
-	left: 600;
+	left: 450;
 	position: absolute;
 	border: 1px solid grey;
 	padding: 5px;
 	padding-bottom: 5px;
 	padding-top: 0px;
 	font-size: 16px;
+	width: 200;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
 }
 
 .gtitle {
