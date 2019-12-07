@@ -206,8 +206,11 @@ a:hover {
    color:  #e6e6e6;
 }
 
-.TOC a{
+.TOC {
 	text-align: center;
+}
+
+.TOC a{
 	text-decoration: none;
 	color: grey;
 }
