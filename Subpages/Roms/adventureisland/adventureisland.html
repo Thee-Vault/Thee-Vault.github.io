@@ -21,7 +21,6 @@
 			The Vault
 		</title>
 		
-
 		<script>
 		
 			function thankyou() {
@@ -33,6 +32,7 @@
 				x.style.display = "none";
 			}
 		}
+
 		</script>
 
 	</head>
@@ -91,18 +91,17 @@
 									
 			</div>
 
-			<script>
-		
-			function thankyou() {
-				var x = document.getElementById("thank");
-				if (x.style.display === "none")
-		{
-				x.style.display = "inline-block";
-			} else {
-				x.style.display = "none";
-			}
-		}
-		</script>
+			<div style="display: none;" id="thank">
+
+				<h3> Thank You For Downloading </h3>
+
+				<p> We appreciate you for downloading, each download a user does motivates us to continue updating this site :) </p>
+
+				<button onclick="thankyou()" type="submit" class="close"> Close </button>
+
+				<br>
+
+			</div>
 			
 		</div>
 		
