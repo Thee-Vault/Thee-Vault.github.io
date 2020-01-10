@@ -232,7 +232,7 @@ a:hover {
 
 #thank {
 	border: 1px solid grey;
-	box-shadow: -1px 1px 18px;
+	box-shadow: -1px 1px 18px #c706b9;
 	border-radius: 10px;
 	text-align: center;
 	position: fixed;
