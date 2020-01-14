@@ -243,3 +243,33 @@ a:hover {
 	left: 350;
 	width: 674;
 }
+
+.bigbox3 {
+	padding: 10px;
+	border: 1px solid grey;
+	margin: 200px;
+	margin-top: 50px;
+	font-size: 24;
+	color: grey;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
+  
+}
+
+.bigbox3 p {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+  
+}
+
+.bigbox3 a {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+  
+}
