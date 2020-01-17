@@ -165,6 +165,10 @@ h1 {
 	top: 33px;
 	border-radius: 2px;
 }
+.resize {
+	width:292px;
+	height:400px;
+}
 
 .center {
     display: block;
