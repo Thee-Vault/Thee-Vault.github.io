@@ -276,4 +276,6 @@ a:hover {
 
 button {
 	background-color: #181a1b;
+	color: white;
+	border-color: #575757;
 }
