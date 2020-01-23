@@ -274,7 +274,6 @@ a:hover {
   
 }
 
-<<<<<<< HEAD
 .littlebox2 {
 	padding: 5px;
 	border: 1px solid grey;
@@ -284,11 +283,36 @@ a:hover {
 	font-size: 24;
 	box-shadow: -1px 1px 18px #c706b9;
     border-radius: 10px;
-  
-=======
+  }
+
+ input[type="text"] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	background-color: grey;
+	border-radius: 10px;
+}
+
 button {
-	background-color: #181a1b;
+	background-color: grey;
+	border-radius: 20px;
+	height: 40px;
+	width: 40px;
+}
+
+::placeholder {
 	color: white;
-	border-color: #575757;
->>>>>>> 6a009f92790667ad296af2bce53b33de313a98b0
+}
+
+.search {
+	position: absolute;
+	left: 850px;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
 }
