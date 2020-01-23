@@ -273,3 +273,15 @@ a:hover {
     text-align: center;
   
 }
+
+.littlebox2 {
+	padding: 5px;
+	border: 1px solid grey;
+	height: 120;
+	width: 173;
+	margin-top: 50px;
+	font-size: 24;
+	box-shadow: -1px 1px 18px #c706b9;
+    border-radius: 10px;
+  
+}
