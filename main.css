@@ -333,6 +333,6 @@ ul {
 }
 
 .TOC a:hover {
-	-webkit-text-strok: 1px purple;
+	-webkit-text-stroke: 1px purple;
 	transition: .5s ease-out;
 }
