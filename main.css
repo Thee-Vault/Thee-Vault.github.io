@@ -312,6 +312,7 @@ a:hover {
 textarea:focus, input:focus, button:focus{
     outline: none;
 }
+
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -322,7 +323,8 @@ ul {
 	border: 1px solid grey;
 	height: 40px;
 	width: 70px;
-	margin-top: 50px;
+	margin-top: auto;
+	margin-bottom: 5px;
 	font-size: 10pt; 
 	box-shadow: -1px 1px 18px #c706b9;
     border-radius: 10px;
