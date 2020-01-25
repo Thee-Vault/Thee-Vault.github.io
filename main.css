@@ -331,3 +331,7 @@ ul {
     background: green;
 	color: white;  
 }
+
+.TOC a:hover {
+	-webkit-text-strok: 1px purple;
+}
