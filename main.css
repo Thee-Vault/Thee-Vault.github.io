@@ -285,19 +285,6 @@ a:hover {
     border-radius: 10px;
 }
 
-.closebutton {
-	padding: 5px;
-	border: 1px solid grey;
-	height: 40px;
-	width: 70px;
-	margin-top: 50px;
-	font-size: 10pt; 
-	box-shadow: -1px 1px 18px #c706b9;
-    border-radius: 10px;
-    background: green;
-	color: white;  
-}
-
  input[type="text"] {
 	padding: 10px;
 	font-size: 17px;
