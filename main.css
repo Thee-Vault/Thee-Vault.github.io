@@ -337,3 +337,19 @@ ul {
 	transition: .5s ease-out;
 }
 
+.blue {
+	color: blue;
+}
+
+.ccb3 {
+   border: 1px solid grey;
+	position: absolute;
+	top: 300;
+	font-size: 24;
+	box-shadow: -1px 1px 18px #c706b9;
+   border-radius: 10px;
+   color: grey;
+}
+.dec {
+	text-decoration: none;
+}
