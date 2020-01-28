@@ -13,7 +13,7 @@ h1 {
 .littlebox {
 	padding: 5px;
 	border: 1px solid grey;
-	height: 130;
+	height: 115;
 	width: 173;
 	margin-top: 50px;
 	font-size: 24;
@@ -324,10 +324,7 @@ ul {
 	height: 40px;
 	width: 70px;
 	margin-top: auto;
-<<<<<<< HEAD
-=======
 	margin-bottom: 5px;
->>>>>>> 0b487abc86586a6a062031872675d50d7caf5601
 	font-size: 10pt; 
 	box-shadow: -1px 1px 18px #c706b9;
     border-radius: 10px;
@@ -335,14 +332,8 @@ ul {
 	color: white;  
 }
 
-<<<<<<< HEAD
-#thank .button {
-	margin-bottom: 5px;
-}
-=======
 .TOC a:hover {
 	-webkit-text-stroke: 1px purple;
 	transition: .5s ease-out;
 }
 
->>>>>>> 0b487abc86586a6a062031872675d50d7caf5601
