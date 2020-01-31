@@ -357,3 +357,10 @@ ul {
 .white {
 	color: white;
 }
+
+h2 {
+	color: white;
+	position: absolute;
+	left: 215px;
+	top: 250;
+}
