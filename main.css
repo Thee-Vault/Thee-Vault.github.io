@@ -13,7 +13,7 @@ h1 {
 .littlebox {
 	padding: 5px;
 	border: 1px solid grey;
-	height: 115;
+	height: 130;
 	width: 173;
 	margin-top: 50px;
 	font-size: 24;
@@ -324,6 +324,7 @@ ul {
 	height: 40px;
 	width: 70px;
 	margin-top: auto;
+
 	margin-bottom: 5px;
 	font-size: 10pt; 
 	box-shadow: -1px 1px 18px #c706b9;
@@ -332,35 +333,23 @@ ul {
 	color: white;  
 }
 
+#thank .button {
+	margin-bottom: 5px;
+}
+
 .TOC a:hover {
 	-webkit-text-stroke: 1px purple;
 	transition: .5s ease-out;
 }
 
-.blue {
-	color: blue;
+.progresstitle {
+	color: rgb(0, 160, 3);
+	text-shadow: rgb(185, 8, 243) -1px -2px 0.5em;
+	text-align: center;	
 }
 
-.ccb3 {
-   border: 1px solid grey;
-	position: absolute;
-	top: 300;
-	font-size: 24;
-	box-shadow: -1px 1px 18px #c706b9;
-   border-radius: 10px;
-   color: grey;
-}
-.dec {
-	text-decoration: none;
-}
-
-.white {
+.progresspercent {
 	color: white;
-}
-
-h2 {
-	color: white;
-	position: absolute;
-	left: 215px;
-	top: 250;
+	text-shadow: rgb(185, 8, 243) -1px -2px 0.5em;
+	text-align: center;
 }
