@@ -51,6 +51,7 @@ h1 {
   height: 500px;
   padding: 10px;
   text-align: center;
+  overflow-y: auto;
 }
 
 .bigbox a {
@@ -188,4 +189,22 @@ li {
 
 .reccomended {
 	color: #186BC4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
