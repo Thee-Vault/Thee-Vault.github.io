@@ -1,121 +1,157 @@
-<html>	
+<html>
 
-	<head>
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147547428-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			
-			gtag('config', 'UA-147547428-1');
-		</script>
-		
-		<script>
-    var input, filter, ul, li, a, i, txtValue, hr, b, c, p; 
-    input = document.getElementById("input");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("list");
-    li = ul.getElementsByTagName("li");
-    hr = document.getElementsByTagName("hr");
-    p = document.getElementsByTagName("p")
-    for (i = 0; i < li.length; i++)
-     for (b = 0; b < hr.length; b++)
-     for (c = 0; c < p.length; c++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-            hr[b].style.display = "none";
-            p[c].style.display = "none";
-        }
-    }
-			}
-		</script>
-		
-		<link rel="shortcut icon" type="image/x-icon" href="https://thee-vault.github.io/favicon.ico">
-		
-		<link rel="stylesheet" type="text/css" href="https://thee-vault.github.io/main.css">
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<title>
-			The Vault - Nes Roms
-		</title>
-		
-	</head>
-	
-	<body>
-		
-		<div>
-			
-			
-			<h1> 
-				
-				The Vault 
-				
-			</h1> 
-			
-			
-			
-			<div class="littlebox">
-								
-				<a href="https://thee-vault.github.io/index"> Home <a/> 
-					
-					<br> 
-					
-					<a class="open" href="https://thee-vault.github.io/Subpages/roms">Roms</a>
-					
-					<br> 
-					
-					<a href="https://thee-vault.github.io/Subpages/emulators">Emulators </a> 
-					
-					<br> 
-
-					<a href="https://thee-vault.github.io/Subpages/about"> About </a> 
-					
-				</div>			
-				
-				<div class="ccb2">
-					
-						<span> Color Code: </span> <br> 
+  <head>
+  
+  	<link rel="stylesheet" type="text/css" href="../../main.css">
+  	
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <title> The Vault - NES Roms </title>
+    
+  </head>
+  
+  <body>
+    
+    <h1 class="title"> The Vault </h1>
+    
+    <div class="flex-box">
+    
+    <div class="leftbar">
+      
+      <h2 class="barheaders"> Menu </h2>
+      
+      <div class="menu">
+      
+    		<div class="menu-item">
+      
+	        <i class="fa fa-home fa-lg awesome" aria-hidden="true"></i>
+	      
+	      	<a href="../../index.html"> Home </a>
+      	
+      	</div>
+      	
+      	<div class="menu-item">
+      
+	        <i class="fa fa-floppy-o fa-lg awesome" aria-hidden="true"></i>
+	      
+	      	<a href="../roms.html"> Roms </a>
+      	
+      	</div>
+      	
+      	<div class="menu-item">
+      
+	        <i class="fa fa-gamepad fa-lg awesome" aria-hidden="true"></i>
+	      
+	      	<a href="../emulators.html"> Emulators </a>
+      	
+      	</div>
+      	
+      	<div class="menu-item">
+      
+	        <i class="fa fa-info fa-lg awesome" aria-hidden="true"></i>
+	      
+	      	<a href="../about.html"> About Us </a>
+      	
+      	</div>
+      	
+      	<div class="menu-item">
+      
+	        <i class="fa fa-question fa-lg awesome" aria-hidden="true"></i>
+	      
+	      	<a href="../help.html"> How to help </a>
+      	
+      	</div>
+      	
+      	<br>
+      	
+      	<h2 class="barheaders"> Shortcuts </h2>
+      	
+      	<ul>
+      	
+	      	<div class="menu-item">
+	      	
+	      		<li>
+	      		
+							<a href="jsnes.html">Jsnes</a>
 						
-						<span class="red"> Red: </span> <br>
-												
-						<span> Unadded </span> <br> 
-
-						<span class="green"> Green: </span> <br>
-												
-						<span> Added </span> <br>
+						</li>
 						
-						<span class="orange"> Orange: </span> <br>
+	      	</div>
+	      	
+	      	<div class="menu-item">
 						
-						<span> In process </span>
+						<li>
 						
-					</div>
-
-					<div class="search">
-
-					<input type="text" id="input" onkeyup="search()" title="As of right now the search bar has a lagging problem so if your browser freezed for a minute just wait. It is the browser processing the request. Yes, my javascript does suck." placeholder="Search Roms...">
-
-					<button type="submit" class="searchbutton">
-
-						<i class="fa fa-search"></i>
-
-					</button>
-
-					</div>
-					
-					<div class="bigbox">
-					
-						<p> Table of Contents: </p>
+							<a href="Roms/Nroms.html">NES</a>
 						
-						<br> 
-
-						<div class="TOC">
+						</li>
+						
+	      	</div>
+	      	
+	      	<div class="menu-item">
+						
+						<li>
+						
+							<a href="Roms/Sroms.html">SNES</a>
+						
+						</li>
+						
+	      	</div>
+	      	
+	      	<div class="menu-item">
+						
+						<li>
+						
+							<a href="Roms/N64roms.html">N64</a>
+						
+						</li>
+						
+	      	</div>
+	      	
+	      	<div class="menu-item">
+						
+						<li>
+						
+							<a href="Roms/GBAroms.html">GBA</a>
+						
+						</li>
+						
+	      	</div>
+	      	
+	      	<div class="menu-item">
+						
+						<li>
+						
+							<a href="Roms/GBCroms.html">GBC</a>
+						
+						</li>
+						
+	      	</div>
+	      	
+	      	<div class="menu-item">
+						
+						<li>
+						
+							<a href="Roms/FDSroms.html">FDS</a>
+						
+						</li>
+						
+	      	</div>
+	      	
+	      </ul>
+      
+      </div>
+      
+      
+    </div>
+    
+    <div class="bigbox">
+    
+			<div class="TOC">
+			
+				<h3> Table of Contents: </h3>
 						
 						<a href="#A"> A </a> 
 						
@@ -168,297 +204,294 @@
 						<a href="#Y"> Y </a> 
 						
 						<a href="#Z"> Z </a>
-
-						
-					</div>
-
-											<hr>
-						
-							<div class="roms"> 
-						
-						 <p class="centerr"> 1-9: </p> 
+            
+      <hr>
+      
+   		 </div>
+    
+    		<h3> 1-9: </h3> 
+    		
+    		<div class="roms">
 							
 					<ul id="list">
 
-						<li>	<a class="green" href="tenyard\tenyard"> 10-Yard Fight </a> <br> </li> </li>
+						<li>	<a class="done" href="tenyard\tenyard"> 10-Yard Fight </a> <br> </li> </li>
 							
-						<li>	<a class="green" href="1942\1942"> 1942 </a> <br> </li>
+						<li>	<a class="done" href="1942\1942"> 1942 </a> <br> </li>
 							
-						<li>	<a class="green" href="1943\1943"> 1943: The Battle of Midway </a> <br> </li>
+						<li>	<a class="done" href="1943\1943"> 1943: The Battle of Midway </a> <br> </li>
 							
-						<li>	<a class="green" href="720\720"> 720Â° </a> <br> </li>
+						<li>	<a class="done" href="720\720"> 720° </a> <br> </li>
 							
-						<li>	<a class="green" href="8 eyes\8"> 8 Eyes </a> <br> </li>
-							
-						
-						
+						<li>	<a class="done" href="8 eyes\8"> 8 Eyes </a> <br> </li>
+
 						<hr>
 						
-						 <p class="centerr" id="A"> A: </p> 
+						 <h3 id="A"> A: </h3>  
 							
-						<li>	<a class="green" href="abadox\abadox"> Abadox: The Deadly Inner War </a> <br> </li>
+							<li>	<a class="done" href="abadox\abadox"> Abadox: The Deadly Inner War </a> <br> </li>
 							
-						<li>	<a class="green" href="addad\addad"> Advanced Dungeons And Dragons: Dragonspike <a/> <br> </li> 
+							<li>	<a class="done" href="addad\addad"> Advanced Dungeons And Dragons: Dragonspike </a> <br> </li> 
 								
-							<li>	<a class="green" href="heroesoflance\heroesoflance"> Advanced Dungeons And Dragons: Heroes of the Lance </a> <br> </li> 
+							<li>	<a class="done" href="heroesoflance\heroesoflance"> Advanced Dungeons And Dragons: Heroes of the Lance </a> <br> </li> 
 								
-							<li>	<a class="green" href="hillsfar\hillsfar"> Advanced Dungeons And Dragons: Hillsfar </a> <br> </li>
+							<li>	<a class="done" href="hillsfar\hillsfar"> Advanced Dungeons And Dragons: Hillsfar </a> <br> </li>
 								
-							<li>	<a class="green" href="poolsofradiance\poolsofradiance"> Advanced Dungeons And Dragons: Pools of Radiance </a> <br> </li>
+							<li>	<a class="done" href="poolsofradiance\poolsofradiance"> Advanced Dungeons And Dragons: Pools of Radiance </a> <br> </li>
 								
-							<li>	<a class="green" href="adventureisland\adventureisland"> Adventure Island Classic </a> <br> </li>
+							<li>	<a class="done" href="adventureisland\adventureisland"> Adventure Island Classic </a> <br> </li>
 								
-							<li>	<a class="green" href="adventureislandii\adventureislandii"> Adventure Island II </a> <br> </li>
+							<li>	<a class="done" href="adventureislandii\adventureislandii"> Adventure Island II </a> <br> </li>
 								
-							<li>	<a class="green" href="adventureisland3\adventureisland3"> Adventure Island 3 </a> <br> </li>
+							<li>	<a class="done" href="adventureisland3\adventureisland3"> Adventure Island 3 </a> <br> </li>
 								
-							<li>	<a class="green" href="adventuresinthemagickingdom\adventuresinthemagickingdom.html"> Adventures in the Magic Kingdom </a> <br> </li>
+							<li>	<a class="done" href="adventuresinthemagickingdom\adventuresinthemagickingdom.html"> Adventures in the Magic Kingdom </a> <br> </li>
 								
-							<li>	<a class="green" href="AdventuresofDinoRiki/adventuresofdinoriki"> Adventures of Dino Riki </a> <br> </li>
+							<li>	<a class="done" href="AdventuresofDinoRiki/adventuresofdinoriki"> Adventures of Dino Riki </a> <br> </li>
 								
-							<li>	<a class="green" href="adventuresoflolo/adventuresoflolo"> Adventures of Lolo </a> <br> </li>
+							<li>	<a class="done" href="adventuresoflolo/adventuresoflolo"> Adventures of Lolo </a> <br> </li>
 								
-							<li>	<a class="green" href="adventuresoflolo2/adventuresoflolo2"> Adventures of Lolo 2 </a> <br> </li>
+							<li>	<a class="done" href="adventuresoflolo2/adventuresoflolo2"> Adventures of Lolo 2 </a> <br> </li>
 								
-							<li>	<a class="green" href="adventuresoflolo3/adventuresoflolo3"> Adventures of Lolo 3 </a> <br> </li>
+							<li>	<a class="done" href="adventuresoflolo3/adventuresoflolo3"> Adventures of Lolo 3 </a> <br> </li>
 								
-							<li>	<a class="green" href="adventuresoftomsawyer/adventuresoftomsawyer"> Adventures of Tom Sawyer </a> <br> </li>	 
+							<li>	<a class="done" href="adventuresoftomsawyer/adventuresoftomsawyer"> Adventures of Tom Sawyer </a> <br> </li>	 
 								
-							<li>	<a class="green" href="airfortress/airfortress"> Air Fortress </a> <br> </li>
+							<li>	<a class="done" href="airfortress/airfortress"> Air Fortress </a> <br> </li>
 								
-							<li>	<a class="green" href="airwolf/airwolf"> Airwolf </a> <br> </li>
+							<li>	<a class="done" href="airwolf/airwolf"> Airwolf </a> <br> </li>
 								
-							<li>	<a class="green" href="alfredchicken/alfredchicken"> Alfred Chicken </a> <br> </li>
+							<li>	<a class="done" href="alfredchicken/alfredchicken"> Alfred Chicken </a> <br> </li>
 								
-							<li>	<a class="green" href="alien3/alien3"> Alien 3 </a> <br> </li>
+							<li>	<a class="done" href="alien3/alien3"> Alien 3 </a> <br> </li>
 								
-							<li>	<a class="green" href="allpro/allpro"> All-Pro Basketball </a> <br> </li>
+							<li>	<a class="done" href="allpro/allpro"> All-Pro Basketball </a> <br> </li>
 								
-							<li>	<a class="green" href="alphamission/alphamission"> Alpha Mission </a> <br> </li>
+							<li>	<a class="done" href="alphamission/alphamission"> Alpha Mission </a> <br> </li>
 								
-							<li>	<a class="green" href="amagon/amagon"> Amagon </a> <br> </li>
+							<li>	<a class="done" href="amagon/amagon"> Amagon </a> <br> </li>
 								
-							<li>	<a class="green" href="americangladiators/americangladiators"> American Gladiators </a> <br> </li>
+							<li>	<a class="done" href="americangladiators/americangladiators"> American Gladiators </a> <br> </li>
 								
-							<li>	<a class="green" href="anticipation/anticipation"> Anticipation </a> <br> </li>
+							<li>	<a class="done" href="anticipation/anticipation"> Anticipation </a> <br> </li>
 								
-							<li>	<a class="green" href="arch/arch"> Arch Rivals </a> <br> </li>
+							<li>	<a class="done" href="arch/arch"> Arch Rivals </a> <br> </li>
 								
-							<li>	<a class="green" href="archon/archon"> Archon </a> <br> </li>
+							<li>	<a class="done" href="archon/archon"> Archon </a> <br> </li>
 								
-							<li>	<a class="green" href="arkanoid/arkanoid"> Arkanoid </a> <br> </li>
+							<li>	<a class="done" href="arkanoid/arkanoid"> Arkanoid </a> <br> </li>
 								
-							<li>	<a class="green" href="arkista/arkista"> Arkista's Ring </a> <br> </li>
+							<li>	<a class="done" href="arkista/arkista"> Arkista's Ring </a> <br> </li>
 								
-							<li>	<a class="green" href="asterix/asterix"> Asterix </a> <br> </li>
+							<li>	<a class="done" href="asterix/asterix"> Asterix </a> <br> </li>
 								
-							<li>	<a class="green" href="astyanax/astyanax"> Astyanax </a> <br> </li>
+							<li>	<a class="done" href="astyanax/astyanax"> Astyanax </a> <br> </li>
 								
-							<li>	<a class="green" href="athena/athena"> Athena </a> <br> </li>
+							<li>	<a class="done" href="athena/athena"> Athena </a> <br> </li>
 								
-							<li>	<a class="green" href="athleticworld/athleticworld"> Athletic World </a> <br> </li>
+							<li>	<a class="done" href="athleticworld/athleticworld"> Athletic World </a> <br> </li>
 								
-							<li>	<a class="green" href="attackofthekillertomatoes/attackofthekillertomatoes"> Attack of the Killer Tomatoes </a> <br> </li>
+							<li>	<a class="done" href="attackofthekillertomatoes/attackofthekillertomatoes"> Attack of the Killer Tomatoes </a> <br> </li>
 								
-							<li>	<a class="green" href="aussierulesfooty/aussietrulesfooty"> Aussie Rules Footy </a> <br> </li>
+							<li>	<a class="done" href="aussierulesfooty/aussietrulesfooty"> Aussie Rules Footy </a> <br> </li>
 								
 							
 							
 							<hr>
 							
-							 <p class="centerr" id="B"> B: </p>
+							 <h3 id="B"> B: </h3> 
 								
-							<li>	<a class="green" href="backtothefuture/backtothefuture"> Back to the Future </a> <br> </li>
+							<li>	<a class="done" href="backtothefuture/backtothefuture"> Back to the Future </a> <br> </li>
 								
-							<li>	<a class="green" href="backtothefuture23/backtothefuture23"> Back to the Future II And III </a> <br> </li>
+							<li>	<a class="done" href="backtothefuture23/backtothefuture23"> Back to the Future II And III </a> <br> </li>
 								
-							<li>	<a class="green" href="badnews/badnews"> Bad News Baseball </a> <br> </li>
+							<li>	<a class="done" href="badnews/badnews"> Bad News Baseball </a> <br> </li>
 								
-							<li>	<a class="green" href="badstreet/badstreet"> Bad Street Brawler </a> <br> </li>
+							<li>	<a class="done" href="badstreet/badstreet"> Bad Street Brawler </a> <br> </li>
 								
-							<li>	<a class="green" href="balloonfight/balloonfight"> Balloon Fight</a> <br> </li>
+							<li>	<a class="done" href="balloonfight/balloonfight"> Balloon Fight</a> <br> </li>
 								
-							<li>	<a class="green" href="bandaigolf/bandaigolf"> Bandai Golf: Challenge Pebble Beach </a> <br> </li>
+							<li>	<a class="done" href="bandaigolf/bandaigolf"> Bandai Golf: Challenge Pebble Beach </a> <br> </li>
 								
-							<li>	<a class="green" href="banditking/banditking"> Bandit Kings of Ancient China</a> <br> </li>
+							<li>	<a class="done" href="banditking/banditking"> Bandit Kings of Ancient China</a> <br> </li>
 								
-							<li>	<a class="green" href="barbie/barbie"> Barbie </a> <br> </li>
+							<li>	<a class="done" href="barbie/barbie"> Barbie </a> <br> </li>
 								
-							<li>	<a class="green" href="barkerbill/barkerbill"> Barker Bill's Trick Shooting </a> <br> </li>
+							<li>	<a class="done" href="barkerbill/barkerbill"> Barker Bill's Trick Shooting </a> <br> </li>
 								
-							<li>	<a class="green" href="baseball/baseball"> Baseball </a> <br> </li>
+							<li>	<a class="done" href="baseball/baseball"> Baseball </a> <br> </li>
 								
-							<li>	<a class="green" href="baseballsim/baseballsim"> Baseball Simulator 1.000 </a> <br> </li>
+							<li>	<a class="done" href="baseballsim/baseballsim"> Baseball Simulator 1.000 </a> <br> </li>
 								
-							<li>	<a class="green" href="baseballstars/baseballstars"> Baseball Stars </a> <br> </li>
+							<li>	<a class="done" href="baseballstars/baseballstars"> Baseball Stars </a> <br> </li>
 								
-							<li>	<a class="green" href="baseballstars2/baseballstars2"> Baseball Stars 2 </a> <br> </li>
+							<li>	<a class="done" href="baseballstars2/baseballstars2"> Baseball Stars 2 </a> <br> </li>
 								
-							<li>	<a class="green" href="basesloaded/basesloaded"> Bases Loaded </a> <br> </li>
+							<li>	<a class="done" href="basesloaded/basesloaded"> Bases Loaded </a> <br> </li>
 								
-							<li>	<a class="green" href="basesloaded2/basesloaded2"> Bases Loaded II: Second Season </a> <br> </li>
+							<li>	<a class="done" href="basesloaded2/basesloaded2"> Bases Loaded II: Second Season </a> <br> </li>
 								
-							<li>	<a class="green" href="basesloaded3/basesloaded3"> Bases Loaded 3 </a> <br> </li>
+							<li>	<a class="done" href="basesloaded3/basesloaded3"> Bases Loaded 3 </a> <br> </li>
 								
-							<li>	<a class="green" href="basesloaded4/basesloaded4"> Bases Loaded 4 </a> <br> </li>
+							<li>	<a class="done" href="basesloaded4/basesloaded4"> Bases Loaded 4 </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Batman </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Batman </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Batman Returns </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Batman Returns </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Batman: Return of the Joker </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Batman: Return of the Joker </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Battle Chess </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Battle Chess </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Battle Tank </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Battle Tank </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Battleship </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Battleship </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Battletoads </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Battletoads </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Battletoads And Double Dragon </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Battletoads And Double Dragon </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Beetlejuice </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Beetlejuice </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Best of the Best: Championship Karate </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Best of the Best: Championship Karate </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bigfoot </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bigfoot </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bill And Ted's Excellent Video Game Adventure </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bill And Ted's Excellent Video Game Adventure </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bill Elliott's NASCAR challenge </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bill Elliott's NASCAR challenge </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bionic Commando </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bionic Commando </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Blades of Steel </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Blades of Steel </a> <br> </li>
 						
-							<li>	<a class="orange" href="not_done.html"> Blaster Master </a> <br> </li> 
+							<li>	<a class="partialdone" href="not_done.html"> Blaster Master </a> <br> </li> 
 								
-							<li>	<a class="orange" href="not_done.html"> Bo Jackson Baseball </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bo Jackson Baseball </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bomberman </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bomberman </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bomberman II </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bomberman II </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bonk's Adventure </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bonk's Adventure </a> <br> </li>
 								
-							<li>	<a class="orange" href="not_done.html"> Bouldler Dash </a> <br> </li>
+							<li>	<a class="partialdone" href="not_done.html"> Bouldler Dash </a> <br> </li>
 								
-							<li>	<a class="green" href="bsdracula\bsdracula"> Bram Stoker's Dracula </a> <br> </li>
+							<li>	<a class="done" href="bsdracula\bsdracula"> Bram Stoker's Dracula </a> <br> </li>
 								
-							<li>	<a class="green" href="breaktime\breaktime"> Break Time: The National Pool Tour </a> <br> </li>
+							<li>	<a class="done" href="breaktime\breaktime"> Break Time: The National Pool Tour </a> <br> </li>
 								
-							<li>	<a class="green" href="breakthru\breakthru"> BreakThru </a> <br> </li>
+							<li>	<a class="done" href="breakthru\breakthru"> BreakThru </a> <br> </li>
 								
-							<li>	<a class="green" href="bubblebobble\bubblebobble"> Bubble Bobble </a> <br> </li>
+							<li>	<a class="done" href="bubblebobble\bubblebobble"> Bubble Bobble </a> <br> </li>
 								
-							<li>	<a class="green" href="bubblebobble2\bubblebobble2"> Bubble Bobble Part 2 </a> <br> </li>
+							<li>	<a class="done" href="bubblebobble2\bubblebobble2"> Bubble Bobble Part 2 </a> <br> </li>
 								
-							<li>	<a class="green" href="buckyohare\buckyohare"> Bucky O'Hare </a> <br> </li>
+							<li>	<a class="done" href="buckyohare\buckyohare"> Bucky O'Hare </a> <br> </li>
 								
-							<li>	<a class="green" href="bumpnjump\bumpnjump"> Bump 'n' Jump </a> <br> </li>
+							<li>	<a class="done" href="bumpnjump\bumpnjump"> Bump 'n' Jump </a> <br> </li>
 								
-							<li>	<a class="green" href="buraifighter\buraifighter"> Burai Fighter </a> <br> </li>
+							<li>	<a class="done" href="buraifighter\buraifighter"> Burai Fighter </a> <br> </li>
 								
-							<li>	<a class="green" href="burgertime\burgertime"> Burger Time </a> <br> </li>
+							<li>	<a class="done" href="burgertime\burgertime"> Burger Time </a> <br> </li>
 								
 								<hr>
 								
-								 <p class="centerr" id="C"> C: </p> 
+								 <h3 id="C"> C: </h3> 
 									
-								<li>	<a class="red" href="not_done.html"> Cabel </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cabel </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Caesars Palace </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Caesars Palace </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> California Games </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> California Games </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Capcom's Gold Medal Challenge '92</a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Capcom's Gold Medal Challenge '92</a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Captain America and The Avengers </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Captain America and The Avengers </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Captain Planet and the Planteers </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Captain Planet and the Planteers </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Captain Skyhawk </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Captain Skyhawk </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Casino Kid </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Casino Kid </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Casino Kid 2 </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Casino Kid 2 </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Castelian </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Castelian </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Castle of Dragon </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Castle of Dragon </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Castlequest </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Castlequest </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Castlevania </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Castlevania </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Castlevania II: Simon's Quest </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Castlevania II: Simon's Quest </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Castlevania III: Dracula's Curse </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Castlevania III: Dracula's Curse </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Caveman Games </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Caveman Games </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Championship Bowling </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Championship Bowling </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Championship Pool </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Championship Pool </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Championship Rally </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Championship Rally </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Chessmaster </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Chessmaster </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Chip 'n Dale: Rescue Rangers </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Chip 'n Dale: Rescue Rangers </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Chip 'n Dale: Rescue Rangers 2 </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Chip 'n Dale: Rescue Rangers 2 </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Chubby Cherub </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Chubby Cherub </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Circus Caper </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Circus Caper </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> City Connection </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> City Connection </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Clash at Demonhead </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Clash at Demonhead </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Classic Conventration </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Classic Conventration </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cliffhanger </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cliffhanger </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Clu Clu Land </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Clu Clu Land </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cobra Command </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cobra Command </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cobra Triangle </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cobra Triangle </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Code Name: Viper </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Code Name: Viper </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Color a Dinosaur </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Color a Dinosaur </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Commando </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Commando </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Conan: The Mysteries of Time </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Conan: The Mysteries of Time </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Conflict </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Conflict </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Conquest of the Crystal Palace </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Conquest of the Crystal Palace </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Contra </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Contra </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Contra Force </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Contra Force </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cool World </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cool World </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cowboy Kid </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cowboy Kid </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Crackout </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Crackout </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Crash 'n the Boys: Street Challenge </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Crash 'n the Boys: Street Challenge </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Crystalis </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Crystalis </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cyberball </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cyberball </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Cybernoid: The Fighting Machine </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Cybernoid: The Fighting Machine </a> <br> </li>
 
-								<li>	<a class="red" href="basewars/basewars">Cyber Stadium Series - Base Wars </a> <br> </li>
+								<li>	<a class="notdone" href="basewars/basewars">Cyber Stadium Series - Base Wars </a> <br> </li>
 									
 								
 								
@@ -466,403 +499,353 @@
 								
 								 
 									
-									<p class="centerr" id="D"> D: </p>
+									<h3 id="D"> D: </h3> 
 									
-								<li>	<a class="red" href="not_done.html"> Dance Aerobics </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dance Aerobics </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Danny Sullivan's Indy heat </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Danny Sullivan's Indy heat </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Darkman </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Darkman </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dash Galaxy in the Alein Asylum </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dash Galaxy in the Alein Asylum </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Day Dreamin' Davey </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Day Dreamin' Davey </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Days of Thunder </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Days of Thunder </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Deadly Towers </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Deadly Towers </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Defender II </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Defender II </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Defender of the Crown </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Defender of the Crown </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Defenders of Dynatron City </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Defenders of Dynatron City </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> DÃ©jÃ  Vu </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Déjà Vu </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Demon Sword </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Demon Sword </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Desert Commander </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Desert Commander </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Destination Earthstar </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Destination Earthstar </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Destiny of an Emperor </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Destiny of an Emperor </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Devil World </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Devil World </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dick Tracy </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dick Tracy </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Die Hard </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Die Hard </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dig Dug II: Trouble in Paradise </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dig Dug II: Trouble in Paradise </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Digger T. Rock: Legend of the Lost City </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Digger T. Rock: Legend of the Lost City </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dirty Harry </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dirty Harry </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Disney's Aladdin </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Disney's Aladdin </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Disney's Beauty and the Beast </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Disney's Beauty and the Beast </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Disney's Darkwing Duck </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Disney's Darkwing Duck </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Disney's The Jungle Book </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Disney's The Jungle Book </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Disney's The Lion King </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Disney's The Lion King </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Disney's The Little Mermaid </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Disney's The Little Mermaid </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Donkey Kong </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Donkey Kong </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Donkey Kong 3 </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Donkey Kong 3 </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Donkey Kong Classics </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Donkey Kong Classics </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Donkey Kong Jr. </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Donkey Kong Jr. </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Donkey Kong Jr. Math </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Donkey Kong Jr. Math </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Double Dare </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Double Dare </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Double Dragon </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Double Dragon </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Double Dragon II: The Revenge </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Double Dragon II: The Revenge </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Double Dragon III: The Sacred Stones </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Double Dragon III: The Sacred Stones </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Double Dribble </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Double Dribble </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dr. Chaos </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dr. Chaos </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dr. Jekyll and Mr. Hyde </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dr. Jekyll and Mr. Hyde </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dr. Mario </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dr. Mario </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Fighter </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Fighter </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Power </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Power </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Spirit: The New Legend </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Spirit: The New Legend </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Warrior </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Warrior </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Warrior II </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Warrior II </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Warrior III </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Warrior III </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon Warrior IV </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon Warrior IV </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dragon's Lair </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dragon's Lair </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> DropZone </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> DropZone </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Duck Hunt </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Duck Hunt </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> DuckTales </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> DuckTales </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> DuckTales 2 </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> DuckTales 2 </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dungeon Magic: Sword of the Elements </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dungeon Magic: Sword of the Elements </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dusty Diamond's All-Star Softball </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dusty Diamond's All-Star Softball </a> <br> </li>
 									
-								<li>	<a class="red" href="not_done.html"> Dynowarz: Destruction of Spondylus </a> <br> </li>
+								<li>	<a class="notdone" href="not_done.html"> Dynowarz: Destruction of Spondylus </a> <br> </li>
 									
 									<hr>
 									
 									 
 										
-										<p class="centerr" id="E"> E: </p>
+										<h3 id="E"> E: </h3> 
 										
-									<li>	<a class="red" href="not_done.html"> Elevator Action </a> <br> </li>
+									<li>	<a class="notdone" href="not_done.html"> Elevator Action </a> <br> </li>
 										
-									<li>	<a class="red" href="not_done.html"> Eliminator Boat Duel </a> <br> </li>
+									<li>	<a class="notdone" href="not_done.html"> Eliminator Boat Duel </a> <br> </li>
 										
-									<li>	<a class="red" href="not_done.html"> Elite </a> <br> </li>
+									<li>	<a class="notdone" href="not_done.html"> Elite </a> <br> </li>
 										
-									<li>	<a class="red" href="not_done.html"> Excitebike </a> <br> </li>
+									<li>	<a class="notdone" href="not_done.html"> Excitebike </a> <br> </li>
 										
 										<hr>
 										
 										 
 											
-											<p class="centerr" id="F"> F: </p>
+											<h3 id="F"> F: </h3> 
 											
-										<li>	<a class="red" href="not_done.html"> F-117A Stealth Fighter </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> F-117A Stealth Fighter </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> F-15 Strike Eagle </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> F-15 Strike Eagle </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Family Feud </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Family Feud </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Faira: A World of Mystery and Danger </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Faira: A World of Mystery and Danger </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Faxanadu </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Faxanadu </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Felix the Cat </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Felix the Cat </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Ferrari Grand Prix Challenge </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Ferrari Grand Prix Challenge </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Fester's Quest </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Fester's Quest </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Final Fantasy </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Final Fantasy </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Fire 'n Ice </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Fire 'n Ice </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Fisher-Price: Firehouse Rescue </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Fisher-Price: Firehouse Rescue </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Fisher-Price: Perfect Fit </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Fisher-Price: Perfect Fit </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Fist of the North Star </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Fist of the North Star </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Flight of the Inturder </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Flight of the Inturder </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Flying Dragon: The Secret Scroll </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Flying Dragon: The Secret Scroll </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Flying Warriors </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Flying Warriors </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Formula 1 Sensation </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Formula 1 Sensation </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Formula One: Built to Win </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Formula One: Built to Win </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Formula One: Built to Win </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Formula One: Built to Win </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Frankenstein: The Monster Returns </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Frankenstein: The Monster Returns </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Freedom Force </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Freedom Force </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Friday the 13th </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Friday the 13th </a> <br> </li>
 											
-										<li>	<a class="red" href="not_done.html"> Fun House </a> <br> </li>
+										<li>	<a class="notdone" href="not_done.html"> Fun House </a> <br> </li>
 											
 											
 												
 												<hr>
 												
-												<p class="centerr" id="G"> G: </p>
+												<h3 id="G"> G: </h3>
 												
-											<li>	<a class="red" href="not_done.html"> G.I. Joe: A Real American Hero </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> G.I. Joe: A Real American Hero </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> G.I. Joe: The Atlantis Factor </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> G.I. Joe: The Atlantis Factor </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Galaga: Demons of Death </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Galaga: Demons of Death </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Galaxy 5000 </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Galaxy 5000 </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gargoyle's Quest II </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gargoyle's Quest II </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gauntlet </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gauntlet </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gauntlet II </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gauntlet II </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gemfire </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gemfire </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Genghis Khan </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Genghis Khan </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> George Foreman's KO Boxing </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> George Foreman's KO Boxing </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Ghostbusters </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Ghostbusters </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Ghostbusters II </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Ghostbusters II </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Ghosts 'n Goblins </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Ghosts 'n Goblins </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Ghoul School </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Ghoul School </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Goal! </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Goal! </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Goal! Two </a> <br> </li>	
+											<li>	<a class="notdone" href="not_done.html"> Goal! Two </a> <br> </li>	
 												
-											<li>	<a class="red" href="not_done.html"> Godzilla: Monster of Monsters </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Godzilla: Monster of Monsters </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Godzilla 2: War of the Monsters </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Godzilla 2: War of the Monsters </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Golf </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Golf </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Golf Grand Slam </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Golf Grand Slam </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Golgo 13: Top Secret Episode </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Golgo 13: Top Secret Episode </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> The Goonies II </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> The Goonies II </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gotcha! The Sport! </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gotcha! The Sport! </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gradius </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gradius </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Greg Norman's Golf Power </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Greg Norman's Golf Power </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gremlins 2: The New Batch </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gremlins 2: The New Batch </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Guerrilla War </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Guerrilla War </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gumshoe </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gumshoe </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gun-Nac </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gun-Nac </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gyromite </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gyromite </a> <br> </li>
 												
-											<li>	<a class="red" href="not_done.html"> Gyruss </a> <br> </li>
+											<li>	<a class="notdone" href="not_done.html"> Gyruss </a> <br> </li>
 												
 												<hr>
 												
 												
 													
-													<p class="centerr" id="H"> H: </p>
+													<h3 id="H"> H: </h3> 
 													
-												<li>	<a class="red" href="not_done.html"> Hammerin' Harry </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hammerin' Harry </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Harlem Globetrotters </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Harlem Globetrotters </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hatris </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hatris </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Heavy Barrel </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Heavy Barrel </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Heavy Shreddin'	</a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Heavy Shreddin'	</a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> High Speed </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> High Speed </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hogan's Alley </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hogan's Alley </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hollywood Squares </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hollywood Squares </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Home Alone </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Home Alone </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Home Alone 2: Lost in New York </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Home Alone 2: Lost in New York </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hook </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hook </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hoops </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hoops </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hudson Hawk </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hudson Hawk </a> <br> </li>
 													
-												<li>	<a class="red" href="not_done.html"> Hydlide </a> <br> </li>
+												<li>	<a class="notdone" href="not_done.html"> Hydlide </a> <br> </li>
 													
 													<hr>
 													
 													
 														
-														<p class="centerr" id="I"> I: </p>
+														<h3 id="I"> I: </h3> 
 														
-													<li>	<a class="red" href="not_done.html"> Ice Climber </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Ice Climber </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ice Hockey </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Ice Hockey </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ikari Warriors </a> <br> </li>	
+													<li>	<a class="notdone" href="not_done.html"> Ikari Warriors </a> <br> </li>	
 														
-													<li>	<a class="red" href="not_done.html"> Ikari Warriors II: Victory road </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Ikari Warriors II: Victory road </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ikari Warriors III: The Rescue </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Ikari Warriors III: The Rescue </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Image Flight </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Image Flight </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Indiana Jones and the Last Crusade </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Indiana Jones and the Last Crusade </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Indiana Jones and Temple of Doom </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Indiana Jones and Temple of Doom </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Infiltrator </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Infiltrator </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> International Cricket </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> International Cricket </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Iron Tank: The Invasion of Normandy </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Iron Tank: The Invasion of Normandy </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ironsword: Wizards and Warriors II </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Ironsword: Wizards and Warriors II </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Isolated Warrior</a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Isolated Warrior</a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ivan 'Ironman' Stewarts Super Off Road </a> <br> </li>
-														
-														<hr>
-														
-														
-															
-															<p class="centerr" id="J"> J: </p>
-															
-														<li>	<a class="red" href="not_done.html"> Jack Nicklaus' Greatest 18 Holes of Major Championship Golf </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jackal </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jackie Chan's Action Kung Fu </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> James Bond Jr. </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jaws </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jeopardy! </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jeopardy! 25th Anniversary Eddition </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jeopardy! Junior Edition </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Joe and Mac </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> John Elway's Quarterback </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jordan vs. Bird: One on One </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Journey to Silius </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Joust </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Jurassic Park </a> <br> </li>
-															
-														
+													<li>	<a class="notdone" href="not_done.html"> Ivan 'Ironman' Stewarts Super Off Road </a> <br> </li>
 														
 														<hr>
 														
 														
 															
-															<p class="centerr" id="K"> K: </p>
+															<h3 id="J"> J: </h3> 
 															
-														<li>	<a class="red" href="not_done.html"> Kabuki Quantum Fighter </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jack Nicklaus' Greatest 18 Holes of Major Championship Golf </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Karate Champ </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jackal </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Karnov </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jackie Chan's Action Kung Fu </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kick Master </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> James Bond Jr. </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kick Off </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jaws </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kickle Cubicle </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jeopardy! </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kid Icarus </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jeopardy! 25th Anniversary Eddition </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kid Klown in Night Mayor World </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jeopardy! Junior Edition </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kid Kool </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Joe and Mac </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kid Niki: Radical Ninja </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> John Elway's Quarterback </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> King's Knight </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jordan vs. Bird: One on One </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kings of the Beach </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Journey to Silius </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> King's Quest V: Absense Makes the Heart Go Yonder </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Joust </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Kirby's Adventure </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Kiwi Kraze </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> KlashBall </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Knight Rider </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Konami Hyper Soccer </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Krusty's Fun House </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Kung Fu </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Kung-Fu Heroes </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Jurassic Park </a> <br> </li>
 															
 														
 														
@@ -870,47 +853,97 @@
 														
 														
 															
-															<p class="centerr" id="L"> L: </p>
+															<h3 id="K"> K: </h3> 
 															
-														<li>	<a class="red" href="not_done.html"> Laser Invasion </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kabuki Quantum Fighter </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Last Action Hero </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Karate Champ </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Lee Trevino's Fighting </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Karnov </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Legacy of the Wizard </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kick Master </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Legend of the Ghost Lion </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kick Off </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Legendary Wings </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kickle Cubicle </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Legends of the Diamond </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kid Icarus </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Lemmings </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kid Klown in Night Mayor World </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> L'Empereur </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kid Kool </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Les Chevaliers du Zodiaque: La LÃ©gende d'or </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kid Niki: Radical Ninja </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Lethal Weapon </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> King's Knight </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Life Force </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kings of the Beach </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Little League Baseball: Championship Series </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> King's Quest V: Absense Makes the Heart Go Yonder </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Little Nemo: The Dream Master </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kirby's Adventure </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Little Ninja Brothers </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kiwi Kraze </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Little Samspon </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> KlashBall </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Lode Runner </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Knight Rider </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Loopz </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Konami Hyper Soccer </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Low G Man: The Low Gravity Man </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Krusty's Fun House </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Lunar Man </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Kung Fu </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Kung-Fu Heroes </a> <br> </li>
+															
+														
+														
+														<hr>
+														
+														
+															
+															<h3 id="L"> L: </h3> 
+															
+														<li>	<a class="notdone" href="not_done.html"> Laser Invasion </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Last Action Hero </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Lee Trevino's Fighting </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Legacy of the Wizard </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Legend of the Ghost Lion </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Legendary Wings </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Legends of the Diamond </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Lemmings </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> L'Empereur </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Les Chevaliers du Zodiaque: La Légende d'or </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Lethal Weapon </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Life Force </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Little League Baseball: Championship Series </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Little Nemo: The Dream Master </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Little Ninja Brothers </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Little Samspon </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Lode Runner </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Loopz </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Low G Man: The Low Gravity Man </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Lunar Man </a> <br> </li>
 															
 														
 														
@@ -918,103 +951,103 @@
 														
 														 
 															
-															<p class="centerr" id="M"> M: </p>
+															<h3 id="M"> M: </h3> 
 															
-														<li>	<a class="red" href="not_done.html"> M.C. Kids </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> M.C. Kids </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> M.U.L.E </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> M.U.L.E </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> M.U.S.C.L.E. </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> M.U.S.C.L.E. </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mach Rider </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mach Rider </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mad Max </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mad Max </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Magic Darts </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Magic Darts </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Magic Johnson's Fast Break </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Magic Johnson's Fast Break </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Magician </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Magician </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mag Max </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mag Max </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Major League Baseball </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Major League Baseball </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Maniac Mansion </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Maniac Mansion </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mappy-Land </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mappy-Land </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Marble Madness </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Marble Madness </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mario Bros. </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mario Bros. </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mario Bros. (Classic Series) </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mario Bros. (Classic Series) </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mario is Missing! </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mario is Missing! </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mario's Time Machine </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mario's Time Machine </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mechanized Attack </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mechanized Attack </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mega Man </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mega Man </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mega Man 2 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mega Man 2 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mega Man 3 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mega Man 3 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mega Man 4 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mega Man 4 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mega Man 5 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mega Man 5 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mega Man 6 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mega Man 6 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mendel Palace </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mendel Palace </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Metal Gear </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Metal Gear </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Metal Mech: Man and Machine </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Metal Mech: Man and Machine </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Metal Storm </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Metal Storm </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Metroid </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Metroid </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Michael Andretti's World GP </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Michael Andretti's World GP </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mickey Mouusecapade </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mickey Mouusecapade </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mickey's Adventures in Numberland </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mickey's Adventures in Numberland </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mickey's Safari in Letterland </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mickey's Safari in Letterland </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Might and Magic Book One: The Secret of the Inner Sanctum </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Might and Magic Book One: The Secret of the Inner Sanctum </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mighty Bomb Jack </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mighty Bomb Jack </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mighty Final Fight </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mighty Final Fight </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mike Tyson's Punch-Out!! </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mike Tyson's Punch-Out!! </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Millipede </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Millipede </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Milon's Secret Castle </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Milon's Secret Castle </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Monopoly </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Monopoly </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Monster in My Pocket </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Monster in My Pocket </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Monster Party </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Monster Party </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Monster Truck Rally </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Monster Truck Rally </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Motor City Patrol </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Motor City Patrol </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mr. Gimmick </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mr. Gimmick </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ms. Pac-Man </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ms. Pac-Man </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Muppet Adventure: Chaos at the Carnival </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Muppet Adventure: Chaos at the Carnival </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Mystery Quest </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Mystery Quest </a> <br> </li>
 															
 														
 														
@@ -1022,61 +1055,43 @@
 														
 														
 															
-															<p class="centerr" id="N"> N: </p>
+															<h3 id="N"> N: </h3> 
 															
-														<li>	<a class="red" href="not_done.html"> NARC </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> NARC </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> NES Open Tournament Golf </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> NES Open Tournament Golf </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> NES Play Action Football </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> NES Play Action Football </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> New Ghostbusters II </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> New Ghostbusters II </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> NFL Football </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> NFL Football </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Nigel Mansell's World Championship Racing </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Nigel Mansell's World Championship Racing </a> <br> </li>
 
-														<li>	<a class="green" href="nightmare/nightmare"> A Nightmare on Elm Street </a> <br> </li>
+														<li>	<a class="done" href="nightmare/nightmare"> A Nightmare on Elm Street </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Nightshade </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Nightshade </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ninja Crusaders </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ninja Crusaders </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ninja Gaiden </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ninja Gaiden </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ninja Gaiden II: The Dark Sword of Chaos </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ninja Gaiden II: The Dark Sword of Chaos </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ninja Gaiden III: The Ancient Ship of Doom </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ninja Gaiden III: The Ancient Ship of Doom </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ninja Kid </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ninja Kid </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Nintendo World Cup </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Nintendo World Cup </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Noah's Ark </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Noah's Ark </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Nobunaga's Ambition </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Nobunaga's Ambition </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Nobunaga's Ambition II </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Nobunaga's Ambition II </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> North and South </a> <br> </li>
-															
-														
-														
-														<hr>
-														
-														
-															
-															<p class="centerr" id="O"> O: </p>
-															
-														<li>	<a class="red" href="not_done.html"> Operation Wolf </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Orb-3D </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Othello </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Over Horizon </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Overlord </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> North and South </a> <br> </li>
 															
 														
 														
@@ -1084,67 +1099,17 @@
 														
 														
 															
-															<p class="centerr" id="P"> P: </p>
+															<h3 id="O"> O: </h3> 
 															
-														<li>	<a class="red" href="not_done.html"> P.O.W.: Prisoners of War </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Operation Wolf </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Pac-Man </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Orb-3D </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Pac-Man </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Othello </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Palamedes </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Over Horizon </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Panic Restaurant </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Paperboy </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Paperboy 2 </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Parasol Stars: Rainbow Islands II </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Parodius </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Peter Pan and the Pirates </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Phantom Fighter </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pictionary </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pinball </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pinball Quest </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pin*Bot </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pipe Dream </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pirates! </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Platoon </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Popeye </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Power Blade </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Power Blade 2 </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Power Punch II </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Predator </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Prince of Persia </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Princess Tomato in the Salad Kingdom </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pro Sport Hockey </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Pro Wrestling </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Punch-Out!!! </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Puss 'n Boots: Pero's Great Adventure </a> <br> </li>
-															
-														<li>	<a class="red" href="not_done.html"> Puzznic </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Overlord </a> <br> </li>
 															
 														
 														
@@ -1152,13 +1117,81 @@
 														
 														
 															
-															<p class="centerr" id="Q">  Q: </p>
+															<h3 id="P"> P: </h3> 
+															
+														<li>	<a class="notdone" href="not_done.html"> P.O.W.: Prisoners of War </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pac-Man </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pac-Man </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Palamedes </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Panic Restaurant </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Paperboy </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Paperboy 2 </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Parasol Stars: Rainbow Islands II </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Parodius </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Peter Pan and the Pirates </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Phantom Fighter </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pictionary </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pinball </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pinball Quest </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pin*Bot </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pipe Dream </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pirates! </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Platoon </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Popeye </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Power Blade </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Power Blade 2 </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Power Punch II </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Predator </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Prince of Persia </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Princess Tomato in the Salad Kingdom </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pro Sport Hockey </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Pro Wrestling </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Punch-Out!!! </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Puss 'n Boots: Pero's Great Adventure </a> <br> </li>
+															
+														<li>	<a class="notdone" href="not_done.html"> Puzznic </a> <br> </li>
+															
+														
+														
+														<hr>
+														
+														
+															
+															<h3 id="Q">  Q: </h3> 
 															
 															<br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Q*Bert </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Q*Bert </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Qix </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Qix </a> <br> </li>
 															
 														
 														
@@ -1166,75 +1199,239 @@
 														
 														
 															
-															<p class="centerr" id="R"> R: </p>
+															<h3 id="R"> R: </h3> 
 															
-														<li>	<a class="red" href="not_done.html"> R.C. Pro-Am Racing </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> R.C. Pro-Am Racing </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> R.C. Pro-Am II </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> R.C. Pro-Am II </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Racket Attack </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Racket Attack </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rad Racer </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rad Racer </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rad Racer II </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rad Racer II </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Raid on Bungeling Bay </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Raid on Bungeling Bay </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rainbow Islands </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rainbow Islands </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rally Bike </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rally Bike </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rambo </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rambo </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rampage </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rampage </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rampart </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rampart </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Remote Control </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Remote Control </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Renegade </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Renegade </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rescue: The Embassy Mission </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rescue: The Embassy Mission </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Ring King </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Ring King </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> River City Ransom </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> River City Ransom </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Roadblaster </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Roadblaster </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Robin Hood: Prince of Thieves </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Robin Hood: Prince of Thieves </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Robocop </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Robocop </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Robocop 2 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Robocop 2 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Robocop 3 </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Robocop 3 </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Robo Warriers </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Robo Warriers </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rock N Bal </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rock N Bal </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rocket Ranger </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rocket Ranger </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rockin Kats </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rockin Kats </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Roger Clemens MVP Baseball </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Roger Clemens MVP Baseball </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rollerball </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rollerball </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rollerball Racer </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rollerball Racer </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Rollergames </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Rollergames </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Romance of the Three Kingdom's </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Romance of the Three Kingdom's </a> <br> </li>
 															
-														<li>	<a class="red" href="not_done.html"> Romance of the Three Kingdom's II </a> <br> </li>
+														<li>	<a class="notdone" href="not_done.html"> Romance of the Three Kingdom's II </a> <br> </li>
 															
-													<li>	<a class="red" href="not_done.html"> Roundball: 2 on 2 challenge </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Roundball: 2 on 2 challenge </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Rush N Attack </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Rush N Attack </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Rygar </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Rygar </a> <br> </li>				
+																
+														<hr>
+														
+														<h3 id="S"> S: </h3> 
+														
+													<li>	<a class="notdone" href="not_done.html"> S.C.A.T.: Special Cybernetic Aattack Tea </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Secret Scout </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Secret Storm </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Section Z </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Seicross </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sesame Street: 123 </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sesame Street: ABC </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sesame Street: ABC/123 </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sesame Street: Big Bird's Hide and Seek </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sesame Street: Countdown </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Shadow of the Ninja </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Shadowgate </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Shatterhand </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Shingen the Ruler </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Shooting Range </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Short Order/Eggsplode </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Side Pocket </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Silent Service </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Silkworm </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Silver Surfer </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Simpsons: Bartman Meet's Radioactive Man </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Skate or Die </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Skate or Die 2 </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Ski or Die </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Skulls and Crossbones </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sky Kid </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sky Shark </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Slalom </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Smash T.V. </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Snake Rattle N Roll </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Snakes Revenge: Metal Gear II </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Snoopy's Silly Sports Spetacular  </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Snow Brother's </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Soccer </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Solar Jetman: Hunt for the Golden Warship </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Soloman's Key </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Solstice </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Space Shuttle Project </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Spelunker </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Spider-Man: Return of the Sinister Six </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Spot </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Spy Hunter </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Spy vs Spy </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sqoon </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Stack Up </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Stadium Events </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Stanley and the Search for Dr. Livingston </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Force </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Soldier </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Trek </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Trek: The Next Generation </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Voyager </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Wars </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Starship Hector </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Star Tropics </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Stealth ATF </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Stinger </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Street Cop </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Street Fighter 2010: The Final Fight </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Strider </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super C </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Cars </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Dodger Ball </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Glove Ball </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Jeopardy! </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Mario Bros. </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Mario Bros./Duck Hunt </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Mario Bros./Duck Hunt/ World Class Track Meet </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Mario Bros. 2 </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Mario Bros. 3 </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Off-Road </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Pitfal </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Spike Vball </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Spike Vball/World Cup Soccer </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Spy Hunter </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Super Team Games </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Superman </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Swamp Thing </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sword Master </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Sword's and Serpants </a> <br> </li>
 														
 														
 														
@@ -1242,534 +1439,372 @@
 														
 														
 														
-														<p class="centerr" id="S"> S: </p>
+														<h3 id="T"> T: </h3> 
 														
-													<li>	<a class="red" href="not_done.html"> S.C.A.T.: Special Cybernetic Aattack Tea </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Taboo: The Sixth Sense </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Secret Scout </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tag Team Wrestling </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Secret Storm </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tale Spin </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Section Z </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Target: Renegade </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Seicross </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tecmo Baseball </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sesame Street: 123 </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> T and C Surf Design </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sesame Street: ABC </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tecmo Bowl </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sesame Street: ABC/123 </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tecmo NBA Basketball </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sesame Street: Big Bird's Hide and Seek </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tecmo Super Bowl </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sesame Street: Countdown </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tecmo World Cup Soccer </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Shadow of the Ninja </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tecmo World Wrestling </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Shadowgate </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Teenage Mutant Ninja Turtles </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Shatterhand </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Teenage Mutant Ninja Turtles II: The Arcade Game </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Shingen the Ruler </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Teenage Mutant Ninja Turtles III: The Manhatten Project </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Shooting Range </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Teenage Mutant Ninja Turtles: Tournament Fighters </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Short Order/Eggsplode </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tennis </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Side Pocket </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Terminator 2: Judgement Day </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Silent Service </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Terra Cresta </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Silkworm </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tetris </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Silver Surfer </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tetris 2 </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Simpsons: Bartman Meet's Radioactive Man </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Addams Family </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Skate or Die </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Addams Family: Pugsley's Scavenger Hunt </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Skate or Die 2 </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Bayou Billy </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ski or Die </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Dino Riki </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Skulls and Crossbones </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adeventures of Gilligan's Island </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sky Kid </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Lolo </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sky Shark </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Lolo II </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Slalom </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Rad Gravity </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Smash T.V. </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Rocky and Bullwinkle and Friends </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Snake Rattle N Roll </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Adventures of Tom Sawyer </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Snakes Revenge: Metal Gear II </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Battle of Olympus </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Snoopy's Silly Sports Spetacular  </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Blue's Brothers </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Snow Brother's </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Bug's Bunny Birthday Blowout </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Soccer </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Bug's Bunny Crazy Castle </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Solar Jetman: Hunt for the Golden Warship </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Chessmaster </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Soloman's Key </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Empire Strikes Back </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Solstice </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Flintstones </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Space Shuttle Project </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Flintstones: The Suprise at Dinosaur Peak </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Spelunker </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Goonies II </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Spider-Man: Return of the Sinister Six </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Great Waldo Search </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Spot </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Guardian Legend </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Spy Hunter </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Hunt for Red October </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Spy vs Spy </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Immortal </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sqoon </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Incredible Crash Dummies </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Stack Up </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Jetsons: Cogswells Caper </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Stadium Events </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Jungle Book </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Stanley and the Search for Dr. Livingston </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Krion Conquest </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Force </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Last Starfighter </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Soldier </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Legacy of the Wizard </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Trek </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Legend of Kage </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Trek: The Next Generation </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Legend of Zelda </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Voyager </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Little Mermaid </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Wars </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Lone Ranger </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Starship Hector </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Mafar Conspiracy: Golgo 13 II </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Star Tropics </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Mutant Virus </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Stealth ATF </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Punisher </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Stinger </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Ren and Stimpy Show: Buckaroo </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Street Cop </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Rocketeer </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Street Fighter 2010: The Final Fight </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Simpsons: Bars VS. The Space Mutants </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Strider </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Simpsons: Bart VS. The World </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super C </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Terminator </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Cars </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Three Stooges </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Dodger Ball </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Untouchables </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Glove Ball </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> The Young Indiana Jones Chronicles </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Jeopardy! </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Thunder and Lightning </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Mario Bros. </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Thunderbirds </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Mario Bros./Duck Hunt </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Thundercade </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Mario Bros./Duck Hunt/ World Class Track Meet </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tiger-Heli </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Mario Bros. 2 </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Time Lord </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Mario Bros. 3 </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Time's of Lore </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Off-Road </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tiny Toon's Adventure's </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Pitfal </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tiny Toon's Adventure's 2: Trouble in Wackyland </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Spike Vball </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tiny Toon's Adventure's Cartoon Workshop </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Spike Vball/World Cup Soccer </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> To the Earth </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Spy Hunter </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Toki </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Super Team Games </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tom and Jerry </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Superman </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Tomb's and Treasure </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Swamp Thing </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Toobin </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sword Master </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Top Gun </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Sword's and Serpants </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Top Gun: The Second Mission </a> <br> </li>
 														
+													<li>	<a class="notdone" href="not_done.html"> Total Recall </a> <br> </li>
 														
+													<li>	<a class="notdone" href="not_done.html"> Touchdown Fever </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Town and Country's II: Thrillas Surfari </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Town and Country's Surf Design </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Toxic Crusaders </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Track and Field </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Track and Field II </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Treasure Master </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Trog </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Trojan </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Twin Cobra </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Twin Eagle </a> <br> </li>
+										
+														<hr>
+														
+														<h3 id="U"> U: </h3> 
+														
+													<li>	<a class="notdone" href="not_done.html"> Ultima: Exodus </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Ultima: Quest of the Avatar </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Ultima: Warrior's of Destiny </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Ultimate Air Combat </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Ultimate Basketball </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Uncharted Water's </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Uninvited </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Urban Champions </a> <br> </li>
+													
+														<hr>
+
+														<h3 id="V"> V: </h3> 
+														
+													<li>	<a class="notdone" href="not_done.html"> Vegas Dream </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Vice: Project Doom </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Videomation </a> <br> </li>
+														
+													<li>	<a class="notdone" href="not_done.html"> Volleyball </a> <br> </li>		
 														
 														<hr>
 														
+														<h3 id="W"> W: </h3> 
 														
+													<li>	<a class="notdone" href="not_done.html"> Wacky Races </a> <br> </li>
 														
-														<p class="centerr" id="T"> T: </p>
+													<li>	<a class="notdone" href="not_done.html"> Wall Street Kid </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Taboo: The Sixth Sense </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wario's Woods </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tag Team Wrestling </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wayne Gretsky Hockey </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tale Spin </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wayne's World </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Target: Renegade </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Werewolf: The Last Warrior </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tecmo Baseball </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wheel of Fortune </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> T and C Surf Design </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wheel of Fortune: Family Edition </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tecmo Bowl </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wheel of Fortune: Featuring Vanna White </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tecmo NBA Basketball </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wheel of Fortune: Jr. </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tecmo Super Bowl </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Where in Time is Carmen Sandiego </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tecmo World Cup Soccer </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Where's Waldo </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tecmo World Wrestling </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Who Framed Roger Rabbit </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Teenage Mutant Ninja Turtles </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Whomp Em </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Teenage Mutant Ninja Turtles II: The Arcade Game </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Widget </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Teenage Mutant Ninja Turtles III: The Manhatten Project </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wild Gunman </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Teenage Mutant Ninja Turtles: Tournament Fighters </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Willow </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tennis </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Win Lose or Draw </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Terminator 2: Judgement Day </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Winter Games </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Terra Cresta </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wizardry II: Knight of Diamonds </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tetris </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wizardry: Proving Grounds of the Mad </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Tetris 2 </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wizards and Warriors </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Addams Family </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wizards and Warriors III </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Addams Family: Pugsley's Scavenger Hunt </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wolverine </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Bayou Billy </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> World Champ </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Dino Riki </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> World Championship Wrestling </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adeventures of Gilligan's Island </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> World Class Track Meet </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Lolo </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> World Game's </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Lolo II </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wrath of the Black Manta </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Rad Gravity </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wrecking Crew </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Rocky and Bullwinkle and Friends </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wrestlemania </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Adventures of Tom Sawyer </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Wurm: Journey to the Center of the Earth </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Battle of Olympus </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> WWF King of the Ring </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Blue's Brothers </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> WWF  Wrestlemania Challenge </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> The Bug's Bunny Birthday Blowout </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Bug's Bunny Crazy Castle </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Chessmaster </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Empire Strikes Back </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Flintstones </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Flintstones: The Suprise at Dinosaur Peak </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Goonies II </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Great Waldo Search </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Guardian Legend </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Hunt for Red October </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Immortal </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Incredible Crash Dummies </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Jetsons: Cogswells Caper </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Jungle Book </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Krion Conquest </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Last Starfighter </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Legacy of the Wizard </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Legend of Kage </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Legend of Zelda </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Little Mermaid </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Lone Ranger </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Mafar Conspiracy: Golgo 13 II </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Mutant Virus </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Punisher </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Ren and Stimpy Show: Buckaroo </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Rocketeer </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Simpsons: Bars VS. The Space Mutants </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Simpsons: Bart VS. The World </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Terminator </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Three Stooges </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Untouchables </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> The Young Indiana Jones Chronicles </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Thunder and Lightning </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Thunderbirds </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Thundercade </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Tiger-Heli </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Time Lord </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Time's of Lore </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Tiny Toon's Adventure's </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Tiny Toon's Adventure's 2: Trouble in Wackyland </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Tiny Toon's Adventure's Cartoon Workshop </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> To the Earth </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Toki </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Tom and Jerry </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Tomb's and Treasure </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Toobin </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Top Gun </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Top Gun: The Second Mission </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Total Recall </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Touchdown Fever </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Town and Country's II: Thrillas Surfari </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Town and Country's Surf Design </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Toxic Crusaders </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Track and Field </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Track and Field II </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Treasure Master </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Trog </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Trojan </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Twin Cobra </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Twin Eagle </a> <br> </li>
-														
-														
-														
+													<li>	<a class="notdone" href="not_done.html"> WWF Wrestlemania: Steel Cage Challenge </a> <br> </li>
+							
 														<hr>
 														
+														<h3 id="X"> X: </h3> 
 														
+													<li>	<a class="notdone" href="not_done.html"> Xenophobe </a> <br> </li>
 														
-														<p class="centerr" id="U"> U: </p>
+													<li>	<a class="notdone" href="not_done.html"> Xevious </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ultima: Exodus </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Xexyz </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Ultima: Quest of the Avatar </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Ultima: Warrior's of Destiny </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Ultimate Air Combat </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Ultimate Basketball </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Uncharted Water's </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Uninvited </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Urban Champions </a> <br> </li>
-														
-														
-														
+													<li>	<a class="notdone" href="not_done.html"> X-Man </a> <br> </li>
+
 														<hr>
+	
+														<h3 id="Y"> Y: </h3> 
 														
+													<li>	<a class="notdone" href="not_done.html"> Yo! Noid </a> <br> </li>
 														
+													<li>	<a class="notdone" href="not_done.html"> Yoshi </a> <br> </li>
 														
-														<p class="centerr" id="V"> V: </p>
-														
-													<li>	<a class="red" href="not_done.html"> Vegas Dream </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Vice: Project Doom </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Videomation </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Volleyball </a> <br> </li>
-														
-														
-														
+													<li>	<a class="notdone" href="not_done.html"> Yoshi's Cookie </a> <br> </li>
+													
 														<hr>
+						
+														<h3 id="Z"> Z: </h3> 
 														
-														<p class="centerr" id="W"> W: </p>
+													<li>	<a class="notdone" href="not_done.html"> Zanac </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Wacky Races </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Zelda II: The Adventure of Link </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Wall Street Kid </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Zen: Intergalactic Ninja </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Wario's Woods </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Zodas Revenge: Star Tropics II </a> <br> </li>
 														
-													<li>	<a class="red" href="not_done.html"> Wayne Gretsky Hockey </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wayne's World </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Werewolf: The Last Warrior </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wheel of Fortune </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wheel of Fortune: Family Edition </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wheel of Fortune: Featuring Vanna White </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wheel of Fortune: Jr. </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Where in Time is Carmen Sandiego </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Where's Waldo </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Who Framed Roger Rabbit </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Whomp Em </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Widget </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wild Gunman </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Willow </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Win Lose or Draw </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Winter Games </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wizardry II: Knight of Diamonds </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wizardry: Proving Grounds of the Mad </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wizards and Warriors </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wizards and Warriors III </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wolverine </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> World Champ </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> World Championship Wrestling </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> World Class Track Meet </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> World Game's </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wrath of the Black Manta </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wrecking Crew </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wrestlemania </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Wurm: Journey to the Center of the Earth </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> WWF King of the Ring </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> WWF  Wrestlemania Challenge </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> WWF Wrestlemania: Steel Cage Challenge </a> <br> </li>
-														
-														
-														
-														<hr>
-														
-														<p class="centerr" id="X"> X: </p>
-														
-													<li>	<a class="red" href="not_done.html"> Xenophobe </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Xevious </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Xexyz </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> X-Man </a> <br> </li>
-														
-														
-														
-														<hr>
-														
-														
-														
-														<p class="centerr" id="Y"> Y: </p>
-														
-													<li>	<a class="red" href="not_done.html"> Yo! Noid </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Yoshi </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Yoshi's Cookie </a> <br> </li>
-														
-														
-														
-														<hr>
-														
-														
-														
-														<p class="centerr" id="Z"> Z: </p>
-														
-													<li>	<a class="red" href="not_done.html"> Zanac </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Zelda II: The Adventure of Link </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Zen: Intergalactic Ninja </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Zodas Revenge: Star Tropics II </a> <br> </li>
-														
-													<li>	<a class="red" href="not_done.html"> Zombie Nation </a> <br> </li>
+													<li>	<a class="notdone" href="not_done.html"> Zombie Nation </a> <br> </li>
 
 													</ul>
 
 					</div>
-						
-
-					
-
-														
-														</div>		
-														
-														</div>
-														
-														</body>
-														
-														</html>																																			
+    
+    </div>
+    
+    <div class="rightbar">
+      
+      <h2 class="barheaders"> Contributers </h2>
+      
+      	<a href="https://github.com/Ldog8315">
+      
+		      <div class="contributer">
+		      
+		      	<img class="contribimg" src="https://avatars0.githubusercontent.com/u/39543258?s=460&v=4">
+		      
+		      	<span class="contribuser"> Ldog8315 </span>
+		      	
+		      </div>
+		      
+		    </a>
+		    
+		    <a href="https://github.com/DarkMidus"> 
+      
+		      <div class="contributer">
+		      
+		      	<img class="contribimg" src="https://avatars3.githubusercontent.com/u/39868305?s=460&u=a2c1ebf2070463acdfa97899cbc50003baa807d8&v=4">
+		      
+		      	<span class="contribuser"> DarkMidus </span>
+		      	
+		      </div>
+		      
+		    </a>=
+      
+    </div>
+    
+    </div>
+    
+  </body>
+  
+</html>

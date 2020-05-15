@@ -208,3 +208,21 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
+.TOC a{
+	margin-right: 10px;
+}
+
+h3 {
+color: white;
+  font-size: 25px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666B7A;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.roms li{
+	text-align: left;
+}
+
