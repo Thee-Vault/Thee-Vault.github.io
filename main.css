@@ -139,6 +139,29 @@ h1 {
 	border-bottom: 2px solid white;
 }
 
+.boxart img {
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin-top: 35px;
+	float: left;
+}
+
+.rominfo {
+	width: 300px
+	text-align: center;
+	display: inline-block;
+}
+
+.rominfo ul {
+	list-style: none;
+}
+
+.rominfo li {
+	border-bottom: 1px solid grey;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
 p, span{
   color: #9c9cab;
   font-size: 20px;
@@ -151,6 +174,11 @@ hr {
 
 a {
 	text-decoration: none;
+	color: #9c9cab;
+	font-size: 20px;
+}
+
+b {
 	color: #9c9cab;
 	font-size: 20px;
 }
@@ -191,6 +219,33 @@ li {
 	color: #186BC4;
 }
 
+button {
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	height: 30px;
+	background: #6CC417;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	outline: none;
+}
+
+button:hover {
+	background: green;
+}
+
+.buttonbox {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+form {
+	margin: 0px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 10px;
@@ -226,3 +281,6 @@ color: white;
 	text-align: left;
 }
 
+.rominfo h3 {
+	margin: 0px;
+}
